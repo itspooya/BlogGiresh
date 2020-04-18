@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    {% load static %}
+    <head>
+        {% load static %}
 
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
-<!-- Material Design for Bootstrap -->
-    <link href="{% static 'css/mdb.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
- <!-- jQuery -->
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <!-- Material Design for Bootstrap -->
+        <link href="{% static 'css/mdb.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
+     <!-- jQuery -->
 
-    <meta charset="UTF-8">
-    <title>گیرش</title>
+        <meta charset="UTF-8">
+        <title>گیرش</title>
 
-</head>
-<body style="font-family: 'Vazir FD' "  >
-<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.js' %}"></script>
-<script src="{% static 'js/mdb.js' %}"></script>
-
+    </head>
+    <body style="font-family: 'Vazir FD' "  >
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
 <style>
 
     /* Navigation*/
@@ -27,12 +26,12 @@
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
 
-    .top-nav-collapse {
-        background-color: #667490 !important ;
-    }
-    .navbar:not(.top-nav-collapse) {
-        background: #667490 !important;
-    }
+        .top-nav-collapse {
+            background-color: #667490!important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent!important;
+        }
     footer.page-footer {
         background-color: #667490 !important;
     }
@@ -65,12 +64,17 @@
         background-position: center center;
     }
     .carousel-item:nth-child(2) {
-        background-image: url({% static 'img/1.jpg' %});
+        background-image: url({% static 'img/3.jpg' %});
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
-
+    .carousel-item:nth-child(3) {
+        background-image: url({% static 'img/4.jpg' %});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 </style>
 <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -114,9 +118,100 @@
         </div>
     </div>
 </div>
+
+<!---->
+
+<!-- Full Height Modal Right -->
+<div class="modal fade right" id="fullHeightModalRight" style="float: right ; text-align: right" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+        <div class="modal-content modal-dialog modal-notify modal-warning">
+            <div class="modal-header">
+                <h4 class="modal-title w-100" id="myModalLabel"> کارخانه و دفتر مرکزی</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <i class="fas fa-search-location fa-4x mb-3 animated rotateIn"></i>
+                <h5>
+                    <p>
+                آدرس: تهران، کیلومتر ۱۳ جاده اشتهارد، یوسف آباد قوام.
+                    </p>
+                    <p>
+
+                    <p></p>
+                تلفن: ۶۵۵۸۴۵۲۱ - ۶۵۵۸۴۵۲۲ - ۶۵۵۸۴۵۲۳
+                    </p>
+                    <p>
+                    <p></p>
+                فکس: ۶۵۵۸۳۰۵۰
+                    </p>
+                    <p>
+                    <p></p>
+
+                پیامک: ۳۰۰۰۴۹۳۰۴۹
+                    </p>
+                </h5>
+
+
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">خروج</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Full Height Modal Right -->
+
+
+<div class="modal fade right" style="float: right ; text-align: right" id="fullHeightModalRight1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+        <div class="modal-content modal-dialog modal-notify modal-warning">
+            <div class="modal-header">
+                <h4 class="modal-title w-100" id="myModalLabel">مرکز پخش</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <i class="fas fa-search-location fa-4x mb-3 animated rotateIn"></i>
+                <p>
+
+                </p>
+                <h5>
+                    <p>
+                آدرس: تهران، بازار بزرگ، بازار آهنگران، کوچه مسجد جامع، پاساژ ابن الرضا.
+                    </p>
+
+                    <p>
+                تلفن: ۵۵۸۱۹۸۱۸
+                    </p>
+                    <p>
+                فکس: ۵۵۵۷۴۵۲۸
+                    </p>
+                </h5>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">خروج</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--Navbar-->
 <nav class="navbar  navbar-expand-lg navbar-dark stylish-color-dark fixed-top scrolling-navbar">
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -151,12 +246,16 @@
 
     </div>
 </nav>
+<!--/.Navbar-->
+
+<!--Carousel Wrapper-->
 <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
 
     <!--Indicators-->
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1" data-slide-to="2"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -173,14 +272,9 @@
                             <h1 class="font-weight-bold  text-uppercase " style="color: #ffff00">شرکت گیرش</h1>
                         </li>
                         <li>
-                            <p class="font-weight-bold text-uppercase py-4">تنوع در رنگ با بالاترین کیفیت</p>
+                            <h2 class="font-weight-bold text-uppercase py-4">تنوع در رنگ با بالاترین کیفیت</h2>
                         </li>
-                        <li class="list-inline-item">
-                            <a  href="#" class="btn btn-unique btn-lg btn-rounded mr-0">دکمه ۱</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">دکمه ۲</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -192,16 +286,16 @@
         <div class="carousel-item">
             <!--Mask-->
             <div class="view">
-                <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
                     <ul class="animated fadeInUp col-md-12 list-unstyled">
                         <li>
-                            <h1 class="font-weight-bold text-uppercase" style="color: #007E33">محصول با کیفیت حق شماست</h1>
+                            <h1 class="font-weight-bold text-uppercase" style="color: #ffff00">محصول با کیفیت حق شماست</h1>
                         </li>
                         <li>
-                            <p class="font-weight-bold text-uppercase py-4" style="color:#007E33">پیشرو در کیفیت</p>
+                            <h2 class="font-weight-bold text-uppercase py-4">پیشرو در کیفیت</h2>
                         </li>
                         <li>
-                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-rounded btn-lg">مشاهده محصولات</a>
+                            <a target="_blank" href="page/govash.html" class="btn btn-primary btn-rounded btn-lg">مشاهده محصولات</a>
                         </li>
                     </ul>
                 </div>
@@ -211,7 +305,24 @@
         <!--/.Second slide -->
 
         <!--Third slide-->
-
+        <div class="carousel-item">
+            <!--Mask-->
+            <div class="view">
+                <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled">
+                        <li>
+                            <h1 class="font-weight-bold text-uppercase" style="color: #ffff00">بیشتر در مورد ما بدانید</h1></li>
+                        <li>
+                            <h2 class="font-weight-bold text-uppercase py-4">به هر سوال شما پاسخ داده خواهد شد</h2>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#modalContactForm" class="btn btn-lg btn-indigo btn-rounded">تیم پشتیبانی</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.Mask-->
+        </div>
         <!--/.Third slide-->
 
     </div>
@@ -228,31 +339,149 @@
     </a>
     <!--/.Controls-->
 </div>
-<!--/.Navbar-->
-
-<!--Carousel Wrapper-->
-
 <!--/.Carousel Wrapper-->
 <main >
+    <div>
+        <section>
+            <h1 class="text-center font-up font-bold mt-5 mb-3 pt-5 wow fadeIn animated heartBeat " data-wow-delay="0.2s">مشاهده محصولات</h1>
 
-<section>
-<div class="container">
-<div class="row">
-    <div class="col-lg-8 col-md-8 col-sm-8 mt-3 pb-1"></div>
-    {%  for post in post_list %}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h2 class="card-title">{{ post.title }}</h2>
-            <p class="card-text text-muted h6">{{ post.author }}</p>
-            <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">بیشتر بخوانید &rarr;</a>
+            <!--Section description-->
+            <p class="text-center font-up pb-5 mb-4 font-bold wow fadeIn" data-wow-delay="0.2s">.با خدمات ما آشنا شوید</p>
+            <div class="row text-center mb-2">
 
-        </div>
+
+                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn">
+                    <!-- Card Wider -->
+                    <div class="card card-cascade">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay" style="height: 550px">
+                            <img class="card-img-top" src="{% static 'img/new_year.jpeg' %}" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+
+
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            {% with post_list|first as first_object %}
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{ first_object.title }}</strong></h4>
+                            <!-- Subtitle -->
+
+                            <!-- Text -->
+                            <p class="card-text">{{ first_object.content|slice:":200" }}</p>
+                            <button class="btn peach-gradient btn-rounded"><a href="{% url 'post_detail' first_object.slug  %}"></a>بیشتر بخوانید &rarr;</button>
+                            {% endwith %}
+
+
+
+
+                        </div>
+
+
+
+                        <!-- Card content -->
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn">
+                    <!-- Card Wider -->
+                    <div class="card card-cascade">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay" style="height: 550px">
+                            <img class="card-img-top" src="{% static 'img/s.jpg' %}" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>گواش های متنوع</strong></h4>
+                            <!-- Subtitle -->
+
+                            <!-- Text -->
+                            <p class="card-text">دارای بهترین کیفیت </p>
+
+                            <a href="./page/govash.html" class="btn purple-gradient btn-rounded">مشاهده محصول</a>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Card Wider -->
+
+                <!-- Card Narrower -->
+                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn" >
+                    <!-- Card Wider -->
+                    <div class="card card-cascade" >
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay "   >
+                            <img    class="card-img-top "  src="{% static 'img/unnamed.jpg' %}" alt="Card image cap">
+                            <a href="#!" >
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>رنگ های آکریلیک</strong></h4>
+
+                            <p class="card-text">دارای بهترین کیفیت </p>
+
+                            <!-- Subtitle -->
+
+                            <!-- Text -->
+                            <a href="page/acleryc.html" class="btn blue-gradient btn-rounded ">مشاهده محصول</a>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Card Narrower -->
+
+                <!-- Card Regular -->
+
+                <!-- Card Regular -->
+            </div>
+                <div class="container" style="margin-top:5%  ; margin-bottom: 5%">
+                    <!-- Jumbotron -->
+                    <div class="card card-image z-depth-5  rounded" style="background-image: url(static/img/2.jpg);">
+                        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                            <div class="py-5">
+
+                                <!-- Content -->
+                                <h5 class="h5 orange-text"><i class="fas fa-paint-brush"></i> رنگ پارس</h5>
+                                <h2 class="card-title h2 my-4 py-2">در رنگ های متنوع</h2>
+                                <p class="mb-4 pb-2 px-md-5 mx-md-5">با تجربه ی چندین ساله در زمینه ی تولید رنگ های نقاشی</p>
+                                <a href="page/catalog.html" class="btn peach-gradient btn-rounded "><i class="fas fa-shopping-basket left"></i> مشاهده کاتالوگ</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jumbotron -->
+                </div>
+                <!-- Card Regular -->
+
+        </section>
     </div>
-    {% endfor %}
-</div>
-</div>
-</section>
 </main>
 <!--Footer-->
 <footer class="page-footer font-small stylish-color-dark">
@@ -265,34 +494,37 @@
 
             <!-- Grid column -->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 " >
-                <h6 class="text-uppercase mb-4 font-weight-bold">شرکت تجاری گیرش</h6>
-                <p>شرکت صنایع شیمیایی گيرش, محصولات هنرى پارس, یک شرکت خانوادگی است که فعاليت خود را از سال  1369در دو بخش تولیدی و بازرگانی  با تولید رنگهای ساختمانی و محصولات وابسته و واردات مواد اولیه شیمیایی رنگ با سرمایه یک میلیون شروع نمود </p>
+                <h6 class="text-uppercase mb-4 font-weight-bold" style="float:right;text-align:right">شرکت تجاری گیرش</h6>
+                <p style="text-align:right;float:right">
+                    شرکت صنایع شیمیایی گیرش با بیش از بیست سال سابقه در صنعت رنگ سازی، پیشرو در تولید رنگ های هنری می باشد. این شرکت بهترین تولید کننده گواش (رنگ پوستر) در سطح کشور است.
+
+                </p>
             </div>
 
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-<!--            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">-->
-<!--                <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های ۱</h6>-->
-<!--                <p>-->
-<!--                    <a href="#!">لینک ۱</a>-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    <a href="#!">لینک ۲</a>-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    <a href="#!">لینک ۳</a>-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    <a href="#!">لینک ۴</a>-->
-<!--                </p>-->
-<!--            </div>-->
+            <!--            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">-->
+            <!--                <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های ۱</h6>-->
+            <!--                <p>-->
+            <!--                    <a href="#!">لینک ۱</a>-->
+            <!--                </p>-->
+            <!--                <p>-->
+            <!--                    <a href="#!">لینک ۲</a>-->
+            <!--                </p>-->
+            <!--                <p>-->
+            <!--                    <a href="#!">لینک ۳</a>-->
+            <!--                </p>-->
+            <!--                <p>-->
+            <!--                    <a href="#!">لینک ۴</a>-->
+            <!--                </p>-->
+            <!--            </div>-->
             <!-- Grid column -->
 
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" style="text-align:right;float:right">
                 <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های مفید</h6>
                 <p>
                     <a href="Representation.html">نمایندگی ها</a>
@@ -300,24 +532,34 @@
                 <p>
                     <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>
                 </p>
+
+                <p>
+                    <a   data-toggle="modal" data-target="#fullHeightModalRight">
+                        کارخانه و دفتر مرکزی
+                    </a>
+                </p>
+                <p>
+                    <a   data-toggle="modal" data-target="#fullHeightModalRight1">
+                        مرکز پخش
+                    </a>
+                </p>
                 <p>
                     <a href="#!">قوانین</a>
                 </p>
-                <p>
-                    <a href="#!">سوالات پاسخ‌داده‌شده</a>
-                </p>
+
+
             </div>
 
             <!-- Grid column -->
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="float:right;text-align:right">
                 <h6 class="text-uppercase mb-4 font-weight-bold">اطلاعات تماس</h6>
+                <p style="text-align:right;float:right">
+                    تهران  ,  بازار بزرگ   ,  کوچه آهنگران  ,  پاساژ   ابن الرضا طبقه زير همكف پلاك ٤   </p>
                 <p>
-                     تهران  ,  بازار بزرگ   ,  کوچه آهنگران  ,  پاساژ   ابن الرضا طبقه زير همكف پلاك ٤   </p>
-                <p>
-                    <i class="fas fa-envelope-open mr-3"></i> info@gmail.com</p>
+                    <i class="fas fa-envelope-open mr-3"></i> info@giresh.com</p>
                 <p>
                     <i class="fas fa-phone mr-3"></i> مرکز پخش : ٥٥٨١٩٨١٨-٠٢١
 
@@ -347,10 +589,8 @@
             <div class="col-md-7 col-lg-8">
 
                 <!--Copyright-->
-                <p class="text-md-left">© ۱۳۹۸ کپی‌رایت:
-                    <a href="#">
-                        <strong> کپی‌رایت</strong>
-                    </a>
+                <p class="text-center text-md-left">تمامی حقوق این سایت متعلق به شرکت صنایع شیمیایی گیرش میباشد .
+
                 </p>
 
             </div>
