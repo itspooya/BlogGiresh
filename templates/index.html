@@ -2,17 +2,18 @@
 <html lang="fa" dir="rtl">
     <head>
         {% load static %}
-
+    
         <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
     <!-- Material Design for Bootstrap -->
         <link href="{% static 'css/mdb.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
      <!-- jQuery -->
-
+    
         <meta charset="UTF-8">
         <title>گیرش</title>
-
+    
     </head>
     <body style="font-family: 'Vazir FD' "  >
     <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
@@ -58,19 +59,19 @@
         height: 100%;
     }
     .carousel-item:nth-child(1) {
-        background-image: url({% static 'img/2.jpg' %});
+        background-image: url(static/img/2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
     .carousel-item:nth-child(2) {
-        background-image: url({% static 'img/3.jpg' %});
+        background-image: url(static/img/3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
     .carousel-item:nth-child(3) {
-        background-image: url({% static 'img/4.jpg' %});
+        background-image: url(static/img/s.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -347,16 +348,16 @@
 
             <!--Section description-->
             <p class="text-center font-up pb-5 mb-4 font-bold wow fadeIn" data-wow-delay="0.2s">.با خدمات ما آشنا شوید</p>
-            <div class="row text-center mb-2">
+            <div class="row text-center mb-2 ">
 
 
-                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn">
+                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn  " >
                     <!-- Card Wider -->
-                    <div class="card card-cascade">
+                    <div class="card card-cascade" >
 
                         <!-- Card image -->
-                        <div class="view view-cascade overlay" style="height: 550px">
-                            <img class="card-img-top" src="{% static 'img/new_year.jpeg' %}" alt="Card image cap">
+                        <div class="view view-cascade overlay" style="height: 550px; " >
+                            <img class="card-img-top" src="static/img/new_year.jpeg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -364,16 +365,17 @@
 
                         </div>
                         <div class="card-body card-body-cascade text-center">
-                            {% with post_list|first as first_object %}
+                            {% with postlist|last as last_object %}
                             <!-- Title -->
-                            <h4 class="card-title"><strong>{{ first_object.title }}</strong></h4>
+                            <h4 class="card-title"><strong>{{ last_object.title }}</strong></h4>
                             <!-- Subtitle -->
 
                             <!-- Text -->
-                            <p class="card-text">{{ first_object.content|slice:":200" }}</p>
-                            <button class="btn peach-gradient btn-rounded"><a href="{% url 'post_detail' first_object.slug  %}"></a>بیشتر بخوانید &rarr;</button>
+                            <p class="card-text">{{ last_object.content|slice:":200" }}</p>
                             {% endwith %}
 
+                            <a href= "" class="btn purple-gradient btn-rounded">مشاهده محصول</a>
+                          
 
 
 
@@ -395,7 +397,7 @@
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay" style="height: 550px">
-                            <img class="card-img-top" src="{% static 'img/s.jpg' %}" alt="Card image cap">
+                            <img class="card-img-top" src="static/img/s.jpg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -423,13 +425,13 @@
                 <!-- Card Wider -->
 
                 <!-- Card Narrower -->
-                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn" >
+                <div class="col-lg-4 col-md-12 pb-1 wow fadeIn " >
                     <!-- Card Wider -->
                     <div class="card card-cascade" >
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay "   >
-                            <img    class="card-img-top "  src="{% static 'img/unnamed.jpg' %}" alt="Card image cap">
+                            <img    class="card-img-top "  src="static/img/unnamed.jpg" alt="Card image cap">
                             <a href="#!" >
                                 <div class="mask rgba-white-slight"></div>
                             </a>
