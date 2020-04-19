@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="../static/css/mdb.css" rel="stylesheet" type="text/css">
-    <link href="../static/css/all.css" rel="stylesheet" type="text/css">
-    <link href="../static/css/custom.css" rel="stylesheet" type="text/css">
+        {% load static %}
+
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <!-- Material Design for Bootstrap -->
+        <link href="{% static 'css/mdb.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>گیرش</title>
 </head>
 <body style="font-family: 'Vazir FD' "  >
-<script src="../static/js/jquery-3.4.1.min.js"></script>
-<script src="../static/js/popper.min.js"></script>
-<script src="../static/js/bootstrap.js"></script>
-<script src="../static/js/mdb.js"></script>
-<script src="../static/js/represent.js"></script>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
 <style>
 
     /* Navigation*/
@@ -204,14 +207,14 @@
             <ul class="navbar-nav  ml-auto">
 
                 <li>
-                    <a class="navbar-brand order-md-last" href="../index.html">گیرش</a>
+                    <a class="navbar-brand order-md-last" href="/">گیرش</a>
                 </li>
 
                 <!--                    <li class="nav-item">-->
                 <!--                        <a class="nav-link" href="#">قوانین<i class="fas fa-tasks"></i></a>-->
                 <!--                    </li>-->
                 <li class="nav-item">
-                    <a class="nav-link mr-4" href="../about.html" >درباره ما<i class="fas fa-info-circle"></i></a>
+                    <a class="nav-link mr-4" href="/about" >درباره ما<i class="fas fa-info-circle"></i></a>
                 </li>
 
 
@@ -267,7 +270,7 @@
 و اندازهای 75 میل و 200  تکی
 250 میل و 500 میل و 1000 میل  موجود می باشد.</p>
                 <p style="float: right;text-align:right">نکته قابل توجه که اکریلک پارس را از دیگر رقبا متمایز می کند خصوصیات ماندگاری و ثبات رنگی بالا در برابر تغقییرات جوی بوده که باعث تولید رنگهای هنری مختص نقاشیهای دیواری در سطوح بزرگ را شامل می شود. </p>
-                <a href="../static/img/unnamed.jpg" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="../static/img/unnamed.jpg"></a>
+                <a href="url({% static 'img/unnamed.jpg' %})" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="url({% static 'img/unnamed.jpg' %})"></a>
 
 
 
@@ -322,7 +325,7 @@
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" style="text-align:right;float:right">
                 <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های مفید</h6>
                 <p>
-                    <a href="../Representation.html">نمایندگی ها</a>
+                    <a href="/representation">نمایندگی ها</a>
                 </p>
                 <p>
                     <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>

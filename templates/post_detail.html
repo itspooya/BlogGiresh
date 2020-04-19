@@ -69,6 +69,12 @@
         background-size: cover;
         background-position: center center;
     }
+        .carousel-item:nth-child(3) {
+        background-image: url({% static 'img/s.jpg' %});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 </style>
 <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -220,7 +226,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link mr-4" href="about.html" >درباره ما<i class="fas fa-info-circle"></i></a>
+                <a class="nav-link mr-4" href="/about" >درباره ما<i class="fas fa-info-circle"></i></a>
             </li>
 
             <li class="nav-item">
@@ -249,6 +255,7 @@
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1" data-slide-to="2"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -288,7 +295,7 @@
                             <h2 class="font-weight-bold text-uppercase py-4">پیشرو در کیفیت</h2>
                         </li>
                         <li>
-                            <a target="_blank" href="page/govash.html" class="btn btn-primary btn-rounded btn-lg">مشاهده محصولات</a>
+                            <a target="_blank" href="/govash" class="btn btn-primary btn-rounded btn-lg">مشاهده محصولات</a>
                         </li>
                     </ul>
                 </div>
@@ -393,7 +400,7 @@
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" style="text-align:right;float:right">
                 <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های مفید</h6>
                 <p>
-                    <a href="Representation.html">نمایندگی ها</a>
+                    <a href="/representation">نمایندگی ها</a>
                 </p>
                 <p>
                     <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>
