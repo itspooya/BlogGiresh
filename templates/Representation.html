@@ -54,24 +54,7 @@
     .carousel-inner {
         height: 100%;
     }
-    .carousel-item:nth-child(1) {
-        background-image: url({% static 'img/2.jpg' %});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .carousel-item:nth-child(2) {
-        background-image: url({% static 'img/3.jpg' %});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .carousel-item:nth-child(3) {
-        background-image: url({% static 'img/s.jpg' %});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
+
 </style>
 <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -246,7 +229,7 @@
     </nav>
 
     <!-- Intro Section -->
-    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(static/img/s.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url({% static 'img/s.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="mask rgba-stylish-light">
             <div class="container h-100 d-flex justify-content-center align-items-center">
                 <div class="row pt-5 mt-3">
