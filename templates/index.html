@@ -365,13 +365,14 @@
 
                         </div>
                         <div class="card-body card-body-cascade text-center">
-                            {% with postlist|last as last_object %}
+                            {% with postlist|first as first_object %}
                             <!-- Title -->
-                            <h4 class="card-title"><strong>{{ last_object.title }}</strong></h4>
+                            <h4 class="card-title"><strong>{{ first_object.title }}</strong></h4>
                             <!-- Subtitle -->
 
                             <!-- Text -->
-                            <p class="card-text">{{ last_object.content|slice:":200" }}</p>
+                            <p class="card-text">{{ first_object.content|slice:":200" }}</p>
+                            <button class="btn peach-gradient btn-rounded"><a href="{% url 'post_detail' first_object.slug  %}">بیشتر بخوانید &rarr;</a> </button>
                             {% endwith %}
 
                             <a href= "" class="btn purple-gradient btn-rounded">مشاهده محصول</a>
