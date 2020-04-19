@@ -1,3 +1,6 @@
+body::-webkit-scrollbar {
+    display: none;
+}
 .my-custom-scrollbar {
     position: relative;
     height: 400px;
