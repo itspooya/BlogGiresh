@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^abouten/$',views.abouten),
     url(r'^indexen/',views.indexen),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('blog', views.PostList.as_view(), name='blog'),
 ]
