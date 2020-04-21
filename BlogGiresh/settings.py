@@ -25,7 +25,7 @@ SECRET_KEY = 'i99t_a2(@cxwx)txfqqu$fhb0&n*74&$oku27wdk0j_su6!df#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["giresh.com","www.giresh.com","*"]
 
 
 # Application definition
@@ -75,10 +75,18 @@ WSGI_APPLICATION = 'BlogGiresh.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+             'sql_mode': 'traditional',
+             'charset': 'utf8mb4'
+         },
+         'NAME': 'djangodb',
+         'USER': 'userdjango',
+         'PASSWORD': '8oTsdW3iMnOCwt1lvZ06SsNVOSRzJu4PrzsZRekiZ9NbS1QHDlLp7NBU6hXMmqHiLzkQeZ1HVM2LezZTVTqZ',
+         'HOST': 'localhost',
+         'PORT': '3306', 
+     }
     }
-}
 
 
 # Password validation
@@ -116,8 +124,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
