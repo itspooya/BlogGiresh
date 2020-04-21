@@ -13,6 +13,6 @@ urlpatterns = [
     url(r'^catalog/$', views.catalog),
     url(r'^abouten/$',views.abouten),
     url(r'^indexen/',views.indexen),
+    path('blog', views.BlogList.as_view(), name='blog'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('blog', views.PostList.as_view(), name='blog'),
 ]

@@ -345,14 +345,14 @@
         <section>
            <div class="container" dir="rtl">
                <div class="row">
-                   <div class="col-md-8 mt-3 right">
+    <div class="col-md-12 card mb-12  mt-3 right top float-right" dir="rtl">
                        {% for post in post_list %}
-                       <div class="card mb-4">
-                           <div class="card-body">
-                               <h2 class="card-title" style="float:right;text-align:right">{{ post.title }}</h2>
-                               <p class="card-text text-muted h6">{{ post.author }} |</p>
-                               <p class="card-text">{{ post.content|slice:":200" }}</p>
-                               <a class="btn btn-rounded peach-gradient" href="{% url 'post_detail' post.slug  %}"></a>
+      <div class="card-body" style="text-align:right;float:right">
+        <h1 style="text-align:center">{{ post.title }}</h1>
+        <h5 class="">{{ post.content }}</h5>
+      <h4 class="text-muted" style="float:left;text-align:left">نویسنده: {{ post.author }}</h4>
+<a class="btn btn-rounded peach-gradient" href="{% url 'post_detail' post.slug  %}">بیشتر بخوانید</a>
+
                            </div>
                        </div>
                        {% endfor %}
