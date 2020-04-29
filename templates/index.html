@@ -354,31 +354,31 @@
 
                 <!--Section description-->
                 <p class="text-center font-up pb-5 mb-4 font-bold wow fadeIn" data-wow-delay="0.2s">با خدمات ما آشنا شوید</p>
-                <div class="row text-center mb-2 ">
+                <div class="row text-center mb-2  px-3 ">
 
 
-                    <div class="col-lg-4 col-md-12 pb-1 wow fadeIn  ">
+                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn  ">
                         <!-- Card Wider -->
-                        <div class="card card-cascade">
+                        <div class="card card-cascade" style="max-height: 700px;max-width: 700px;">
 
                             <!-- Card image -->
-                            <div class="view view-cascade overlay" style="height: 550px; ">
-                                <img class="card-img-top" src="{% static 'img/ramadan_farsi.jpg' %}" alt="Card image cap">
-                                <a href="#!">
-                                    <div class="mask rgba-white-slight"></div>
+                            <div class="view view-cascade overlay ">
+                                <img class="card-img-top img-responsive " style="max-height: 100%;" src="{% static 'img/ramadan_farsi.jpg' %} " alt="Card image cap ">
+                                <a href="#! ">
+                                    <div class="mask rgba-white-slight "></div>
                                 </a>
 
 
                             </div>
-                            <div class="card-body card-body-cascade text-center">
+                            <div class="card-body card-body-cascade text-center ">
                                 {% with post_list|first as first_object %}
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>{{ first_object.title }}</strong></h4>
+                                <h4 class="card-title "><strong>{{ first_object.title }}</strong></h4>
                                 <!-- Subtitle -->
 
                                 <!-- Text -->
-                                <p class="card-text">{{ first_object.content|slice:":200" }}</p>
-                                <button class="btn peach-gradient btn-rounded"><a href="{% url 'post_detail' first_object.slug  %}">بیشتر بخوانید &rarr;</a> </button> {% endwith %}
+                                <p class="card-text ">{{ first_object.content|slice:":200 " }}</p>
+                                <a class="btn purple-gradient btn-rounded" href="{% url 'post_detail' first_object.slug %} ">بیشتر بخوانید &rarr;</a> {% endwith %}
 
 
 
@@ -396,29 +396,29 @@
 
 
 
-                    <div class="col-lg-4 col-md-12 pb-1 wow fadeIn">
+                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn ">
                         <!-- Card Wider -->
-                        <div class="card card-cascade">
+                        <div class="card card-cascade " style="max-height: 675px;max-width: 675px;">
 
                             <!-- Card image -->
-                            <div class="view view-cascade overlay" style="height: 550px">
-                                <img class="card-img-top" src="{% static 'img/s.jpg' %}" alt="Card image cap">
-                                <a href="#!">
-                                    <div class="mask rgba-white-slight"></div>
+                            <div class="view view-cascade overlay ">
+                                <img class="card-img-top img-responsive " style="max-height: 100%;" src="{% static 'img/s.jpg' %} " alt="Card image cap ">
+                                <a href="#! ">
+                                    <div class="mask rgba-white-slight "></div>
                                 </a>
                             </div>
 
                             <!-- Card content -->
-                            <div class="card-body card-body-cascade text-center">
+                            <div class="card-body card-body-cascade text-center ">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>گواش های متنوع</strong></h4>
+                                <h4 class="card-title "><strong>گواش های متنوع</strong></h4>
                                 <!-- Subtitle -->
 
                                 <!-- Text -->
-                                <p class="card-text">دارای بهترین کیفیت </p>
+                                <p class="card-text ">دارای بهترین کیفیت </p>
 
-                                <a href="/govash" class="btn purple-gradient btn-rounded">مشاهده محصول</a>
+                                <a href="/govash " class="btn purple-gradient btn-rounded ">مشاهده محصول</a>
 
 
 
@@ -430,30 +430,30 @@
                     <!-- Card Wider -->
 
                     <!-- Card Narrower -->
-                    <div class="col-lg-4 col-md-12 pb-1 wow fadeIn ">
+                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn ">
                         <!-- Card Wider -->
-                        <div class="card card-cascade">
+                        <div class="card card-cascade " style="max-height: 675px;max-width: 675px;">
 
                             <!-- Card image -->
-                            <div class="view view-cascade overlay " style="height:550px">
-                                <img class="card-img-top " src="{% static 'img/unnamed.jpg' %}" alt="Card image cap">
-                                <a href="#!">
-                                    <div class="mask rgba-white-slight"></div>
+                            <div class="view view-cascade overlay ">
+                                <img class="card-img-top img-responsive " src="{% static 'img/unnamed.jpg' %} " alt="Card image cap ">
+                                <a href="#! ">
+                                    <div class="mask rgba-white-slight "></div>
                                 </a>
                             </div>
 
                             <!-- Card content -->
-                            <div class="card-body card-body-cascade text-center">
+                            <div class="card-body card-body-cascade text-center ">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>رنگ های آکریلیک</strong></h4>
+                                <h4 class="card-title "><strong>رنگ های آکریلیک</strong></h4>
 
-                                <p class="card-text">دارای بهترین کیفیت </p>
+                                <p class="card-text ">دارای بهترین کیفیت </p>
 
                                 <!-- Subtitle -->
 
                                 <!-- Text -->
-                                <a href="/acleryc" class="btn blue-gradient btn-rounded ">مشاهده محصول</a>
+                                <a href="/acleryc " class="btn blue-gradient btn-rounded ">مشاهده محصول</a>
 
 
 
@@ -468,17 +468,17 @@
 
                     <!-- Card Regular -->
                 </div>
-                <div class="container" style="margin-top:5%  ; margin-bottom: 5%">
+                <div class="container " style="margin-top:5% ; margin-bottom: 5% ">
                     <!-- Jumbotron -->
-                    <div class="card card-image z-depth-5  rounded" style="background-image: url({% static 'img/2.jpg' %});;">
-                        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-                            <div class="py-5">
+                    <div class="card card-image z-depth-5 rounded " style="background-image: url({% static 'img/2.jpg' %});; ">
+                        <div class="text-white text-center rgba-stylish-strong py-5 px-4 ">
+                            <div class="py-5 ">
 
                                 <!-- Content -->
-                                <h5 class="h5 orange-text"><i class="fas fa-paint-brush"></i> رنگ پارس</h5>
-                                <h2 class="card-title h2 my-4 py-2">در رنگ های متنوع</h2>
-                                <p class="mb-4 pb-2 px-md-5 mx-md-5">با تجربه ی چندین ساله در زمینه ی تولید رنگ های نقاشی</p>
-                                <a href="/catalog" class="btn peach-gradient btn-rounded "><i class="fas fa-shopping-basket left"></i> مشاهده کاتالوگ</a>
+                                <h5 class="h5 orange-text "><i class="fas fa-paint-brush "></i> رنگ پارس</h5>
+                                <h2 class="card-title h2 my-4 py-2 ">در رنگ های متنوع</h2>
+                                <p class="mb-4 pb-2 px-md-5 mx-md-5 ">با تجربه ی چندین ساله در زمینه ی تولید رنگ های نقاشی</p>
+                                <a href="/catalog " class="btn peach-gradient btn-rounded "><i class="fas fa-shopping-basket left "></i> مشاهده کاتالوگ</a>
 
                             </div>
                         </div>
@@ -491,84 +491,84 @@
         </div>
     </main>
     <!--Footer-->
-    <footer class="page-footer font-small stylish-color-dark">
+    <footer class="page-footer font-small stylish-color-dark ">
 
         <!-- Footer Links -->
-        <div class="container text-center text-md-left">
+        <div class="container text-center text-md-left ">
 
             <!-- Footer links -->
-            <div class="row text-center text-md-left mt-3 pb-3">
+            <div class="row text-center text-md-left mt-3 pb-3 ">
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" style="float:right;text-align:right">شرکت تجاری گیرش</h6>
-                    <p style="text-align:right;float:right">
+                    <h6 class="text-uppercase mb-4 font-weight-bold " style="float:right;text-align:right ">شرکت تجاری گیرش</h6>
+                    <p style="text-align:right;float:right ">
                         شرکت صنایع شیمیایی گیرش با بیش از بیست سال سابقه در صنعت رنگ سازی، پیشرو در تولید رنگ های هنری می باشد. این شرکت بهترین تولید کننده گواش (رنگ پوستر) در سطح کشور است.
 
                     </p>
                 </div>
 
-                <hr class="w-100 clearfix d-md-none">
+                <hr class="w-100 clearfix d-md-none ">
 
                 <!-- Grid column -->
-                <!--            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">-->
-                <!--                <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های ۱</h6>-->
+                <!--            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">-->
+                <!--                <h6 class="text-uppercase mb-4 font-weight-bold ">لینک‌های ۱</h6>-->
                 <!--                <p>-->
-                <!--                    <a href="#!">لینک ۱</a>-->
+                <!--                    <a href="#! ">لینک ۱</a>-->
                 <!--                </p>-->
                 <!--                <p>-->
-                <!--                    <a href="#!">لینک ۲</a>-->
+                <!--                    <a href="#! ">لینک ۲</a>-->
                 <!--                </p>-->
                 <!--                <p>-->
-                <!--                    <a href="#!">لینک ۳</a>-->
+                <!--                    <a href="#! ">لینک ۳</a>-->
                 <!--                </p>-->
                 <!--                <p>-->
-                <!--                    <a href="#!">لینک ۴</a>-->
+                <!--                    <a href="#! ">لینک ۴</a>-->
                 <!--                </p>-->
                 <!--            </div>-->
                 <!-- Grid column -->
 
-                <hr class="w-100 clearfix d-md-none">
+                <hr class="w-100 clearfix d-md-none ">
 
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" style="text-align:right;float:right">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">لینک‌های مفید</h6>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 " style="text-align:right;float:right ">
+                    <h6 class="text-uppercase mb-4 font-weight-bold ">لینک‌های مفید</h6>
                     <p>
-                        <a href="/representation">نمایندگی ها</a>
+                        <a href="/representation ">نمایندگی ها</a>
                     </p>
                     <p>
-                        <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>
+                        <a href="#! " data-toggle="modal " data-target="#modalContactForm ">تماس با پشتیبانی</a>
                     </p>
 
                     <p>
-                        <a data-toggle="modal" data-target="#fullHeightModalRight">
+                        <a data-toggle="modal " data-target="#fullHeightModalRight ">
                         کارخانه و دفتر مرکزی
                     </a>
                     </p>
                     <p>
-                        <a data-toggle="modal" data-target="#fullHeightModalRight1">
+                        <a data-toggle="modal " data-target="#fullHeightModalRight1 ">
                         مرکز پخش
                     </a>
                     </p>
                     <p>
-                        <a href="#!">قوانین</a>
+                        <a href="#! ">قوانین</a>
                     </p>
 
 
                 </div>
 
                 <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none">
+                <hr class="w-100 clearfix d-md-none ">
 
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="float:right;text-align:right">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">اطلاعات تماس</h6>
-                    <p style="text-align:right;float:right">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 " style="float:right;text-align:right ">
+                    <h6 class="text-uppercase mb-4 font-weight-bold ">اطلاعات تماس</h6>
+                    <p style="text-align:right;float:right ">
                         تهران , بازار بزرگ , کوچه آهنگران , پاساژ ابن الرضا طبقه زير همكف پلاك ٤ </p>
                     <p>
-                        <i class="fas fa-envelope-open mr-3"></i> info@giresh.com</p>
+                        <i class="fas fa-envelope-open mr-3 "></i> info@giresh.com</p>
                     <p>
-                        <i class="fas fa-phone mr-3"></i> مرکز پخش : ٥٥٨١٩٨١٨-٠٢١
+                        <i class="fas fa-phone mr-3 "></i> مرکز پخش : ٥٥٨١٩٨١٨-٠٢١
 
 
                     </p>
@@ -576,7 +576,7 @@
                         دفتر مرکزی : ٢٣-٦٥٥٨٤٥٢١-٠٢١
                     </p>
                     <p>
-                        <i class="fas fa-sms mr-3"></i> پیامک : ٣٠٠٠٤٩٣٠٤٩
+                        <i class="fas fa-sms mr-3 "></i> پیامک : ٣٠٠٠٤٩٣٠٤٩
                     </p>
                 </div>
 
@@ -590,13 +590,13 @@
             <hr>
 
             <!-- Grid row -->
-            <div class="row d-flex align-items-center">
+            <div class="row d-flex align-items-center ">
 
                 <!-- Grid column -->
-                <div class="col-md-7 col-lg-8">
+                <div class="col-md-7 col-lg-8 ">
 
                     <!--Copyright-->
-                    <p class="text-center text-md-left">تمامی حقوق این سایت متعلق به شرکت صنایع شیمیایی گیرش میباشد .
+                    <p class="text-center text-md-left ">تمامی حقوق این سایت متعلق به شرکت صنایع شیمیایی گیرش میباشد .
 
                     </p>
 
@@ -604,11 +604,11 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-5 col-lg-4 ml-lg-0">
+                <div class="col-md-5 col-lg-4 ml-lg-0 ">
 
                     <!-- Social buttons -->
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
+                    <div class="text-center text-md-right ">
+                        <ul class="list-unstyled list-inline ">
 
 
 
