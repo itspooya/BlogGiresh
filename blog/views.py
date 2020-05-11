@@ -41,3 +41,6 @@ def abouten(request):
 
 def indexen(request):
     return render(request,"index_en.html")
+
+def catalogen(request):
+    return render(request,"catalogen.html")

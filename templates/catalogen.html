@@ -10,7 +10,7 @@
     <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
-    <title>Giresh</title>
+    <title>گیرش</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         }
         
         .top-nav-collapse {
-            background-color: #667490 !important;
+            background-color: #667490!important;
         }
         
         .navbar:not(.top-nav-collapse) {
@@ -34,12 +34,12 @@
         }
         
         footer.page-footer {
-            background-color: #667490;
+            background-color: #667490 !important;
         }
         
         @media only screen and (max-width: 768px) {
             .navbar {
-                background-color: #667490;
+                background-color: #667490 !important;
             }
         }
         /* Necessary for full page carousel*/
@@ -60,36 +60,15 @@
         .carousel-inner {
             height: 100%;
         }
-        
-        .carousel-item:nth-child(1) {
-            background-image: url({% static 'img/2.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-        
-        .carousel-item:nth-child(2) {
-            background-image: url({% static 'img/3.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-        
-        .carousel-item:nth-child(3) {
-            background-image: url({% static 'img/s.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
     </style>
-    <!--Navbar-->
+
     <nav class="navbar  navbar-expand-lg navbar-dark stylish-color-dark fixed-top scrolling-navbar">
 
 
-        <a class="navbar-brand order-md-first" href="#">Giresh</a>
+        <a class="navbar-brand order-md-first" href="/indexen">Giresh</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+</button>
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav">
@@ -97,8 +76,8 @@
                     <a class="nav-link" href="/abouten"><i class="fas fa-info-circle"></i>About Us</a>
                 </li>
                 <!-- <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-address-book"></i>Contact Us</a>
-                </li> -->
+                <a class="nav-link" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-address-book"></i>Contact Us</a>
+            </li> -->
                 <!--            <li class="nav-item">-->
                 <!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user-plus"></i>Register</a>-->
                 <!--            </li>-->
@@ -115,6 +94,9 @@
             <i class="fas fa-globe"> FA</i>
         </a>
     </nav>
+
+
+    <!--Address Modal-->
     <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -245,247 +227,55 @@
         </div>
     </div>
 
-    <!--/.Navbar-->
+    <!--End Modal-->
 
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
+    <header>
 
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
+        <!-- Navbar -->
 
-            <!--First slide-->
-            <div class="carousel-item active">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                            <li>
-                                <h1 class="font-weight-bold  text-uppercase " style="color: #ffff00">Giresh Company</h1>
-                            </li>
-                            <li>
-                                <p class="font-weight-bold text-uppercase py-4">High quality and Diverse Colours</p>
-                            </li>
 
-                        </ul>
+        <!-- Intro Section -->
+        <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url({% static 'img/s.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-stylish-light">
+                <div class="container h-100 d-flex justify-content-center align-items-center">
+                    <div class="row pt-5 mt-3">
+                        <div class="col-md-12 mb-3">
+                            <div class="intro-info-content text-center">
+                                <h1 class="display-3 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s"> <a class="yellow-text font-weight-bold"> Catalogs</a></h1>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--/.Mask-->
             </div>
-            <!--/.First slide-->
-
-            <!--Second slide -->
-            <div class="carousel-item">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-purple-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled">
-                            <li>
-                                <h1 class="font-weight-bold text-uppercase" style="color: #007E33">High quality products is your right</h1>
-                            </li>
-                            <li>
-                                <p class="font-weight-bold text-uppercase py-4" style="color:#007E33">Best of best gathered here</p>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" class="btn btn-primary btn-rounded btn-lg">View Products</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Mask-->
-            </div>
-            <!--/.Second slide -->
-
-            <!--Third slide-->
-            <div class="carousel-item">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-blue-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled">
-                            <li>
-                                <h1 class="font-weight-bold text-uppercase" style="color: #0288d1">Learn more about us</h1>
-                            </li>
-                            <li>
-                                <p class="font-weight-bold text-uppercase py-4" style="color: #0288d1">Ask any question and we will answer in a little time</p>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-lg btn-indigo btn-rounded" data-toggle="modal" data-target="#modalContactForm">Support team</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Mask-->
-            </div>
-            <!--/.Third slide-->
-
         </div>
-        <!--/.Slides-->
 
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
-    </div>
+    </header>
+
+
+
+
     <!--/.Carousel Wrapper-->
     <main>
         <div>
-            <section>
-                <h1 class="text-center font-up font-bold mt-5 mb-3 pt-5 wow fadeIn animated heartBeat " data-wow-delay="0.2s">View all products</h1>
+            <section class="d-flex justify-content-center ">
+                <div style="width: 50% ; margin-top: 5% ; margin-bottom: 5%">
 
-                <!--Section description-->
-                <p class="text-center font-up pb-5 mb-4 font-bold wow fadeIn" data-wow-delay="0.2s">View our services</p>
-                <div class="row text-center mb-2  px-3 ">
-
-
-                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn  ">
-                        <!-- Card Wider -->
-                        <div class="card card-cascade" style="max-height: 700px;max-width: 700px;">
-
-                            <!-- Card image -->
-                            <div class="view view-cascade overlay ">
-                                <img class="card-img-top img-responsive " style="max-height: 100%;" src="{% static 'img/ramadan.jpg' %} " alt="Card image cap ">
-                                <a href="#! ">
-                                    <div class="mask rgba-white-slight "></div>
-                                </a>
-
-
-                            </div>
-                            <div class="card-body card-body-cascade text-center ">
-                                <h4 class="card-title "><strong>Ramadan Mubarak</strong></h4>
-                                <!-- Subtitle -->
-
-                                <!-- Text -->
-                                <p class="card-text font-weight-bold  "> Ramadan takes you on a spiritual journey </br> that ends right at the door of Allah </br>where dwells endless mercy and immeasurable happiness.</br> Ramadan Mubarak to you!</p>
+                    <a target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_0154.JPG' %}"></a>
+                    <hr>
+                    <hr>
+                    <a target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_0153.JPG' %}"></a>
 
 
 
 
 
-                            </div>
-
-
-
-                            <!-- Card content -->
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn ">
-                        <!-- Card Wider -->
-                        <div class="card card-cascade " style="max-height: 700px;max-width: 700px; ">
-
-                            <!-- Card image -->
-                            <div class="view view-cascade overlay ">
-                                <img class="card-img-top img-responsive " style="max-height: 100%; " src="{% static 'img/s.jpg' %} " alt="Card image cap ">
-                                <a href="#! ">
-                                    <div class="mask rgba-white-slight "></div>
-                                </a>
-                            </div>
-
-                            <!-- Card content -->
-                            <div class="card-body card-body-cascade text-center ">
-
-                                <!-- Title -->
-                                <div class="card-body card-body-cascade text-center ">
-
-                                    <!-- Title -->
-                                    <h4 class="card-title "><strong>Diverse and best Quality Gouaches</strong></h4>
-                                    <!-- Subtitle -->
-
-                                    <!-- Text -->
-                                    <p class="card-text ">Best quality</p>
-
-                                    <a class="btn btn-unique ">View Products</a>
 
 
 
 
-                                </div>
-
-
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card Wider -->
-
-                    <!-- Card Narrower -->
-                    <div class="col-lg-4 col-md-12 pb-5 wow fadeIn ">
-                        <!-- Card Wider -->
-                        <div class="card card-cascade " style="max-height: 675px;max-width: 675px; ">
-
-                            <!-- Card image -->
-                            <div class="view view-cascade overlay ">
-                                <img class="card-img-top img-responsive " src="{% static 'img/unnamed.jpg' %} " alt="Card image cap ">
-                                <a href="#! ">
-                                    <div class="mask rgba-white-slight "></div>
-                                </a>
-                            </div>
-
-                            <!-- Card content -->
-                            <div class="card-body card-body-cascade text-center ">
-
-                                <!-- Title -->
-
-                                <!-- Title -->
-                                <h4 class="card-title "><strong>Best Quality and Diverse Gouaches</strong></h4>
-                                <!-- Subtitle -->
-
-                                <!-- Text -->
-                                <p class="card-text ">Best quality</p>
-
-                                <a class="btn btn-unique ">View Products</a>
-
-
-
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card Narrower -->
-
-                    <!-- Card Regular -->
-
-                    <!-- Card Regular -->
                 </div>
-                <div class="container " style="margin-top:5% ; margin-bottom: 5% ">
-                    <!-- Jumbotron -->
-                    <div class="card card-image " style="background-image: url({% static 'img/2.jpg' %}); ">
-                        <div class="text-white text-center rgba-stylish-strong py-5 px-4 ">
-                            <div class="py-5 ">
-
-                                <!-- Content -->
-                                <h5 class="h5 orange-text "><i class="fas fa-paint-brush "></i>Pars colour</h5>
-                                <h2 class="card-title h2 my-4 py-2 ">In Diverse Colours</h2>
-                                <p class="mb-4 pb-2 px-md-5 mx-md-5 ">Years of experience in manufacturing paint colours</p>
-                                <a class="btn peach-gradient btn-rounded " href="/catalog_en"><i class="fas fa-shopping-basket left "></i> View catalog</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Jumbotron -->
-                </div>
-                <!-- Card Regular -->
 
             </section>
         </div>
