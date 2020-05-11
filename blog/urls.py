@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^catalog_en',views.catalogen),
     url(r'^aclerycen',views.Acrelycen),
     url(r'^gouacheen',views.Govashen),
+    url(r"^govashen",views.Govashen),
 
     path('blog', views.BlogList.as_view(), name='blog'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
