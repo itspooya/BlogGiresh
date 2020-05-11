@@ -19,6 +19,10 @@ class BlogList(generic.ListView):
 
 def Representation(request):
     return render(request, "Representation.html")
+def Acrelycen(request):
+    return render(request, "aclerycen.html")
+def Govashen(request):
+    return render(request, "govashen.html")
 
 
 def About(request):
