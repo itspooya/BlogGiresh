@@ -33,6 +33,8 @@ def standarden(request):
 def About(request):
     return render(request, "about.html")
 
+def Archive(request):
+    return render(request,"archive.html")
 
 def govash(request):
     return render(request, "govash.html")
