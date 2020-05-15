@@ -9,11 +9,8 @@
     <link href="{% static 'css/mdb.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/all.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static  'css/custom.css' %}" rel="stylesheet" type="text/css">
-    <!-- jQuery -->
-
     <meta charset="UTF-8">
     <title>گیرش</title>
-
 </head>
 
 <body style="font-family: 'Vazir FD' ">
@@ -23,66 +20,45 @@
     <script src="{% static 'js/mdb.js' %}"></script>
     <style>
         /* Navigation*/
-        
+
         .scrolling-navbar {
             transition: background .5s ease-in-out, padding .5s ease-in-out;
         }
-        
+
         .top-nav-collapse {
             background-color: #667490!important;
         }
-        
+
         .navbar:not(.top-nav-collapse) {
             background: transparent!important;
         }
-        
+
         footer.page-footer {
             background-color: #667490 !important;
         }
-        
+
         @media only screen and (max-width: 768px) {
             .navbar {
                 background-color: #667490 !important;
             }
         }
         /* Necessary for full page carousel*/
-        
+
         html,
         body,
         .view {
             height: 100%;
         }
         /* Carousel*/
-        
+
         .carousel,
         .carousel-item,
         .carousel-item.active {
             height: 100%;
         }
-        
+
         .carousel-inner {
             height: 100%;
-        }
-        
-        .carousel-item:nth-child(1) {
-            background-image: url({% static 'img/2.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-        
-        .carousel-item:nth-child(2) {
-            background-image: url({% static 'img/3.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-        
-        .carousel-item:nth-child(3) {
-            background-image: url({% static 'img/s.jpg' %});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
         }
     </style>
     <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -127,9 +103,7 @@
         </div>
     </div>
 
-    <!---->
-
-    <!-- Full Height Modal Right -->
+    <!--Address Modal-->
     <div class="modal fade right" id="fullHeightModalRight" style="float: right ; text-align: right" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
         <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
@@ -216,157 +190,91 @@
         </div>
     </div>
 
-    <!--Navbar-->
-    <nav class="navbar  navbar-expand-lg navbar-dark stylish-color-dark fixed-top scrolling-navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <a type="button" class="btn btn-email" href="./indexen">
-                <i class="fas fa-globe"> EN</i>
-            </a>
+    <!--End Modal-->
 
-            <ul class="navbar-nav  ml-auto">
-                <li class="nav-item">
-                    <a class="navbar-brand order-md-last" href="#"> گیرش </a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link mr-4" href="/about">درباره ما<i class="fas fa-info-circle"></i></a>
-                </li>
+    <header>
 
-                <li class="nav-item">
-                    <a class="nav-link " href="#" data-toggle="modal" data-target="#modalContactForm">تماس با ما<i class="fas fa-address-book"></i></a>
-                </li>
-                <!--            <li class="nav-item">-->
-                <!--                <a class="nav-link" href="#">قوانین<i class="fas fa-tasks"></i></a>-->
-                <!--            </li>-->
+        <!-- Navbar -->
+        <nav class="navbar  navbar-expand-lg navbar-dark stylish-color-dark fixed-top scrolling-navbar">
 
-                <!--            <li class="nav-item">-->
-                <!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ثبت نام<i class="fas fa-user-plus"></i></a>-->
-                <!--            </li>-->
-                <!--            <li class="nav-item">-->
-                <!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ورود<i class="fas fa-unlock"></i></a>-->
-                <!--            </li>-->
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--                <a  type="button" class="btn btn-email" href="./en/index.html" >-->
+                <!--                    <i class="fas fa-globe" > EN</i>-->
+                <!--                </a>-->
+                <ul class="navbar-nav  ml-auto">
 
-        </div>
-    </nav>
-    <!--/.Navbar-->
+                    <li>
+                        <a class="navbar-brand order-md-last" href="/">گیرش</a>
+                    </li>
 
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">قوانین<i class="fas fa-tasks"></i></a>-->
+                    <!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link mr-4" href="/about">درباره ما<i class="fas fa-info-circle"></i></a>
+                    </li>
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
 
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">تماس با ما<i class="fas fa-address-book"></i></a>
+                    </li>
+                    <!--            <li class="nav-item">-->
+                    <!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ثبت نام<i class="fas fa-user-plus"></i></a>-->
+                    <!--            </li>-->
+                    <!--            <li class="nav-item">-->
+                    <!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ورود<i class="fas fa-unlock"></i></a>-->
+                    <!--            </li>-->
+                </ul>
 
-            <!--First slide-->
-            <div class="carousel-item active">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                            <li>
-                                <h1 class="font-weight-bold  text-uppercase " style="color: #ffff00">شرکت گیرش</h1>
-                            </li>
-                            <li>
-                                <h2 class="font-weight-bold text-uppercase py-4">تنوع در رنگ با بالاترین کیفیت</h2>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Mask-->
             </div>
-            <!--/.First slide-->
+        </nav>
 
-            <!--Second slide -->
-            <div class="carousel-item">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled">
-                            <li>
-                                <h1 class="font-weight-bold text-uppercase" style="color: #ffff00">محصول با کیفیت حق شماست</h1>
-                            </li>
-                            <li>
-                                <h2 class="font-weight-bold text-uppercase py-4">پیشرو در کیفیت</h2>
-                            </li>
-                            <li>
-                                <a target="_blank" href="/govash" class="btn btn-primary btn-rounded btn-lg">مشاهده محصولات</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Mask-->
-            </div>
-            <!--/.Second slide -->
-
-            <!--Third slide-->
-            <div class="carousel-item">
-                <!--Mask-->
-                <div class="view">
-                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                        <ul class="animated fadeInUp col-md-12 list-unstyled">
-                            <li>
-                                <h1 class="font-weight-bold text-uppercase" style="color: #ffff00">بیشتر در مورد ما بدانید</h1>
-                            </li>
-                            <li>
-                                <h2 class="font-weight-bold text-uppercase py-4">به هر سوال شما پاسخ داده خواهد شد</h2>
-                            </li>
-                            <li>
-                                <a data-toggle="modal" data-target="#modalContactForm" class="btn btn-lg btn-indigo btn-rounded">تیم پشتیبانی</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Mask-->
-            </div>
-            <!--/.Third slide-->
-
-        </div>
-        <!--/.Slides-->
-
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
-    <main>
-        <div>
-            <section>
-                <div class="container" dir="rtl">
-                    <div class="row">
-                        <div class="col-md-12 card mb-12  mt-3 right top float-right" dir="rtl">
-                            {% for post in post_list %}
-                            <div class="card-body" style="text-align:right;float:right">
-                                <h1 style="text-align:center">{{ post.title }}</h1>
-                                <h5 class="">{{ post.content }}</h5>
-                                <h4 class="text-muted" style="float:left;text-align:left">نویسنده: {{ post.author }}</h4>
-                                <a class="btn btn-rounded peach-gradient" href="{% url 'post_detail' post.slug  %}">بیشتر بخوانید</a>
+        <!-- Intro Section -->
+        <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url({% static 'img/s.jpg' %});background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-stylish-light">
+                <div class="container h-100 d-flex justify-content-center align-items-center">
+                    <div class="row pt-5 mt-3">
+                        <div class="col-md-12 mb-3">
+                            <div class="intro-info-content text-center">
+                                <h1 class="display-3 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s"> <a class="yellow-text font-weight-bold">گواش های پارس</a></h1>
 
                             </div>
                         </div>
-                        {% endfor %}
                     </div>
                 </div>
+            </div>
         </div>
-        </section>
+
+    </header>
+
+
+
+
+    <!--/.Carousel Wrapper-->
+    <main>
+        <div>
+            <section class="d-flex justify-content-center ">
+                <div style="width: 50% ; margin-top: 5% ; margin-bottom: 5%">
+
+
+                    <a href="{% static 'img/new_year.jpeg' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/new_year.jpeg' %}"></a>
+                    <a href="{% static 'img/new_year.jpeg' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/new_year.jpeg' %}"></a>
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </section>
         </div>
     </main>
     <!--Footer-->
@@ -507,6 +415,3 @@
         <!-- Footer Links -->
 
     </footer>
-</body>
-
-</html>

@@ -24,6 +24,11 @@ def Acrelycen(request):
 def Govashen(request):
     return render(request, "govashen.html")
 
+def standard(request):
+    return render(request,"standard.html")
+
+def standarden(request):
+    return render(request, "standarden.html")
 
 def About(request):
     return render(request, "about.html")
