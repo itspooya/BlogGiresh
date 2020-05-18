@@ -18,9 +18,8 @@ urlpatterns = [
     url(r'^gouacheen',views.Govashen),
     url(r"^govashen",views.Govashen),
     url(r"^standard",views.standard),
-    url(r"^standarden",views.standarden),
+    url(r"^en_standard",views.en_standard),
     url(r"^archive",views.Archive),
-    # url(r"sendmail",views.send_email),
     path('blog', views.BlogList.as_view(), name='blog'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]

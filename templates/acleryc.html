@@ -73,30 +73,30 @@
                 </div>
                 <div class="modal-body mx-3">
                     <form method="GET" action="mailto:support@giresh.com" id="cntctfrm">
-                    <div class="md-form mb-5">
-                        <i class="fas fa-user prefix grey-text"></i>
-                        <input type="text" id="form34" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="form34">اسم شما</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form34" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form34">اسم شما</label>
+                        </div>
 
-                    <div class="md-form mb-5">
-                        <i class="fas fa-envelope prefix grey-text"></i>
-                        <input type="email" id="form29" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="form29">ایمیل شما</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="form29" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form29">ایمیل شما</label>
+                        </div>
 
-                    <div class="md-form mb-5">
-                        <i class="fas fa-tag prefix grey-text"></i>
-                        <input type="text" id="form32" class="form-control validate" name="subject">
-                        <label data-error="wrong" data-success="right" for="form32">موضوع</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form32" class="form-control validate" name="subject">
+                            <label data-error="wrong" data-success="right" for="form32">موضوع</label>
+                        </div>
 
-                    <div class="md-form">
-                        <i class="fas fa-pencil prefix grey-text"></i>
-                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4" name="body"></textarea>
-                        <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
-                    </div>
-</form>
+                        <div class="md-form">
+                            <i class="fas fa-pencil prefix grey-text"></i>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4" name="body"></textarea>
+                            <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
                     <button class="btn btn-unique" onclick="sendmail()">ارسال <i class="fas fa-paper-plane-o ml-1"></i></button>
@@ -272,15 +272,66 @@
                         وسیعی از جلوه های تصویری را ارائه می دهد. .</p>
                     <p style="float:right;text-align:right">اکریلیک پارس را می توان همچون رنگ روغن نیز استفاده کرد . با اضافه کردن لایه ها و حجم رنگ در مرحله بعدی توسط کاردک یا قلمو سطوح زخیم و برجسته را ایجاد کرد. بسته بندیهای اکریلیک پارس شامل: بسته های 6 - 12 - 24 در حجم 21 میل بسته های
                         6 و 12 در حجم 37 میل و اندازهای 75 میل و 200 تکی 250 میل و 500 میل و 1000 میل موجود می باشد.</p>
-                    <p style="float: right;text-align:right">نکته قابل توجه که اکریلیک پارس را از دیگر رقبا متمایز می کند خصوصیات ماندگاری و ثبات رنگی بالا در برابر تغییرات جوی بوده که باعث تولید رنگهای هنری مختص نقاشیهای دیواری در سطوح بزرگ را شامل می شود. </p>
-                    <a href="{% static 'img/unnamed.jpg' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/unnamed.jpg' %}"></a>
- <a href="{% static 'img/img2301.jpg' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/img2301.jpg' %}"></a>
-                                <a href="{% static 'img/IMG_4922.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/IMG_4922.JPG' %}"></a>
-                                <a href="{% static 'img/IMG_4374.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/IMG_4374.JPG' %}"></a>
-                                <a href="{% static 'img/IMG_3960_Reduced.jpg' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/IMG_3960_Reduced.jpg' %}"></a>
-                                <a href="{% static 'img/FullSizeRender.jpg' %}" target="_blank"> <img class="img-fluid z-depth-5  rounded" src="{% static 'img/FullSizeRender.jpg' %}"></a>
 
 
+                    <h2 class="font-weight-bold my-5 text-center">عکس ها</h2>
+
+                    <!--First row-->
+                    <div class="row">
+
+                        <!--First column-->
+                        <div class="col-md-12">
+
+                            <div id="mdb-lightbox-ui"></div>
+
+                            <!--Full width lightbox-->
+                            <div class="mdb-lightbox">
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/unnamed.jpg" data-size="1600x1067">
+                                        <img src="/static/img/resize/unnamed.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/img2301.jpg" data-size="1600x1067">
+                                        <img src="/static/img/resize/img2301.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/IMG_4922.JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_4922.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/IMG_4374.JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_4374.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/IMG_3960_Reduced.jpg" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_3960_reduced.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a href="/static/img/FullSizeRender.jpg" data-size="1600x1067">
+                                        <img src="/static/img/resize/fullsizerender.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+
+
+
+                            </div>
+                            <!--/Full width lightbox-->
+
+                        </div>
+                        <!--/First column-->
+
+                    </div>
 
 
                 </div>
@@ -335,8 +386,8 @@
                         <a href="/representation">نمایندگی ها</a>
                     </p>
                     <p>
-                            <a href="/standard">استاندارد</a>
-                        </p>
+                        <a href="/standard">استاندارد</a>
+                    </p>
                     <p>
                         <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>
                     </p>
@@ -427,11 +478,12 @@
 
     </footer>
     <script>
-  function sendmail(){
-        $(document).ready(function() {
-$("#cntctfrm").submit();
-});
+        function sendmail() {
+            $(document).ready(function() {
+                $("#cntctfrm").submit();
+            });
         }
-        </script>
+    </script>
 </body>
+
 </html>
