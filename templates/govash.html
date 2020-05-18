@@ -72,30 +72,30 @@
                 </div>
                 <div class="modal-body mx-3">
                     <form method="GET" action="mailto:support@giresh.com" id="cntctfrm">
-                    <div class="md-form mb-5">
-                        <i class="fas fa-user prefix grey-text"></i>
-                        <input type="text" id="form34" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="form34">اسم شما</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form34" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form34">اسم شما</label>
+                        </div>
 
-                    <div class="md-form mb-5">
-                        <i class="fas fa-envelope prefix grey-text"></i>
-                        <input type="email" id="form29" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="form29">ایمیل شما</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="form29" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form29">ایمیل شما</label>
+                        </div>
 
-                    <div class="md-form mb-5">
-                        <i class="fas fa-tag prefix grey-text"></i>
-                        <input type="text" id="form32" class="form-control validate" name="subject">
-                        <label data-error="wrong" data-success="right" for="form32">موضوع</label>
-                    </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form32" class="form-control validate" name="subject">
+                            <label data-error="wrong" data-success="right" for="form32">موضوع</label>
+                        </div>
 
-                    <div class="md-form">
-                        <i class="fas fa-pencil prefix grey-text"></i>
-                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4" name="body"></textarea>
-                        <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
-                    </div>
-</form>
+                        <div class="md-form">
+                            <i class="fas fa-pencil prefix grey-text"></i>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4" name="body"></textarea>
+                            <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
                     <button class="btn btn-unique" onclick="sendmail()">ارسال <i class="fas fa-paper-plane-o ml-1"></i></button>
@@ -273,13 +273,90 @@
                     <p style="float:right;text-align:right">بسته بندیهای گواش ٣٠میل پارس شامل: ٦ -١٢- ١٨رنگ بوده و حجمهاي بالاتر : ٢٥٠ميل ٥٠٠ميل و ١٠٠٠ميل و....جهت مصارف بالا و کارگاهی موجود می باشد. ترکیب رنگها قرمز و زرد و آبی سه رنگی اصلی می باشد از ترکیب این سه رنگ رنگهای فرعی : نارنجی
                         ،سبز، بنفش و همه رنگها را می توان ساخت.
                     </p>
-                    <a href="{% static 'img/IMG_0154.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_0154.JPG' %}"></a>
-                    <a href="{% static 'img/IMG_8910.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_8910.JPG' %}"></a>
-                    <a href="{% static 'img/IMG_8910 (1).JPG' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_8910 (1).JPG' %}"></a>
-                    <a href="{% static 'img/IMG_5467.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_5467.JPG' %}"></a>
-                    <a href="{% static 'img/IMG_5464.JPG' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/IMG_5464.JPG' %}"></a>
-                    <a href="{% static 'img/FullSizeRender (3).jpg' %}" target="_blank"> <img class="img-fluid z-depth-5 img-thumbnail rounded" src="{% static 'img/FullSizeRender (3).jpg' %}"></a>
 
+                    <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                        <!--Controls-->
+                        <div class="controls-top">
+                            <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i
+          class="fas fa-chevron-left"></i></a>
+                            <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <!--/.Controls-->
+
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color"></li>
+                            <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color"></li>
+
+                        </ol>
+                        <!--/.Indicators-->
+
+                        <!--Slides and lightbox-->
+
+                        <div class="carousel-inner mdb-lightbox" role="listbox">
+                            <div id="mdb-lightbox-ui"></div>
+                            <!--First slide-->
+                            <div class=" carousel-item active text-center">
+
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/IMG_0154.JPG" onclick="r()" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_0154.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/IMG_8910.JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_8910.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/IMG_8910 (1).JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_8910--1-.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+
+
+
+                            </div>
+                            <!--/.First slide-->
+
+                            <!--Second slide-->
+
+                            <!--/.Second slide-->
+
+                            <!--Third slide-->
+                            <div class="carousel-item text-center">
+
+
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/IMG_5467.JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_5467.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/IMG_5464.JPG" data-size="1600x1067">
+                                        <img src="/static/img/resize/img_5464.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+                                <figure class="col-md-4 d-md-inline-block">
+                                    <a href="/static/img/FullSizeRender (3).jpg" data-size="1600x1067">
+                                        <img src="/static/img/resize/fullsizerender--3-.jpg" class="img-fluid">
+                                    </a>
+                                </figure>
+
+                            </div>
+
+                            <!--/.Third slide-->
+
+                        </div>
+                        <!--/.Slides-->
+
+                    </div>
+                    <!--/.Carousel Wrapper-->
 
 
 
@@ -340,8 +417,8 @@
                         <a href="/representation">نمایندگی ها</a>
                     </p>
                     <p>
-                            <a href="/standard">استاندارد</a>
-                        </p>
+                        <a href="/standard">استاندارد</a>
+                    </p>
                     <p>
                         <a href="#!" data-toggle="modal" data-target="#modalContactForm">تماس با پشتیبانی</a>
                     </p>
@@ -432,11 +509,12 @@
 
     </footer>
     <script>
-  function sendmail(){
-        $(document).ready(function() {
-$("#cntctfrm").submit();
-});
+        function sendmail() {
+            $(document).ready(function() {
+                $("#cntctfrm").submit();
+            });
         }
-        </script>
+    </script>
 </body>
+
 </html>
