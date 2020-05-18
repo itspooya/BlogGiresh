@@ -76,6 +76,7 @@
                 </button>
                 </div>
                 <div class="modal-body mx-3">
+                    <form method="GET" action="mailto:support@giresh.com" id="cntctfrm">
                     <div class="md-form mb-5">
                         <i class="fas fa-user prefix grey-text"></i>
                         <input type="text" id="form34" class="form-control validate">
@@ -90,19 +91,19 @@
 
                     <div class="md-form mb-5">
                         <i class="fas fa-tag prefix grey-text"></i>
-                        <input type="text" id="form32" class="form-control validate">
+                        <input type="text" id="form32" class="form-control validate" name="subject">
                         <label data-error="wrong" data-success="right" for="form32">موضوع</label>
                     </div>
 
                     <div class="md-form">
                         <i class="fas fa-pencil prefix grey-text"></i>
-                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4" name="body"></textarea>
                         <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
                     </div>
-
+</form>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-unique">ارسال <i class="fas fa-paper-plane-o ml-1"></i></button>
+                    <button class="btn btn-unique" onclick="sendmail()">ارسال <i class="fas fa-paper-plane-o ml-1"></i></button>
                 </div>
             </div>
         </div>
@@ -263,7 +264,7 @@
     <main>
         <div>
             <section class="d-flex justify-content-center ">
-                <div style="width: 50% ; margin-top: 5% ; margin-bottom: 5%">
+                <div style="width: 50% ; margin-top: 5% ; margin-bottom: 5%;image-orientation: from-image">
 
                     <p style="text-align:right;float:right">گواش پارس اولین گواش دارای استاندارد از سازمان ملی استاندارد در ایران است که با کیفیت واعجاز رنگی خود تاثیر مهمی در خلق اثر نهایی و ایده هنری شما خواهد داشت</p>
                     <p style="text-align:right;float:right">گواش پارس با استفاده از بهترین پیگمنتها و تکنولوژی روز دنیا ساخته شده.این محصول با بکارگیری خالصترین رنگدانه ها داری رنگی با غلظت مناسب و پوشش یکدست و درخشان می باشد که پس از خشک شدن سطحی یکنواخت و مخملی را بوجود می آورد .</p>
@@ -435,3 +436,12 @@
         <!-- Footer Links -->
 
     </footer>
+    <script>
+  function sendmail(){
+        $(document).ready(function() {
+$("#cntctfrm").submit();
+});
+        }
+        </script>
+</body>
+</html>

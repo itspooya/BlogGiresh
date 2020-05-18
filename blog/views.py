@@ -1,6 +1,9 @@
 from django.views import generic
 from .models import Post
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from . import forms
+
 
 
 class PostList(generic.ListView):
@@ -38,6 +41,19 @@ def Archive(request):
 
 def govash(request):
     return render(request, "govash.html")
+
+# def send_email(request):
+#     if request.method == "POST":
+#         sub = forms.Subscribe(request.POST)
+#         name = sub["name"].value()
+#         email = sub["email"].value()
+#         subject = sub["subject"].value()
+#         message = sub["message"].value()
+#         send_mail(subject,message,"support@giresh.com",[email],fail_silently=False)
+#     return redirect("/")
+
+
+
 
 
 def acleryc(request):
