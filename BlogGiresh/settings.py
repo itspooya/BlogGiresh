@@ -131,11 +131,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
-
-EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.giresh.com'
-EMAIL_USE_TLS = False
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'support@giresh.com'
-EMAIL_HOST_PASSWORD = 'AR#Cn5Ct#$d93MT^S@^1Goit6nKY9RxNmgXS5hEM8hK^S1B2r&z&HvH&ex#b0YfXNvD9h3V&jk00jaRfv9E3pPrdBjg23gYefb#'
-
